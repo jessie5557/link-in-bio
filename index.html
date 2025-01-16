@@ -1,73 +1,95 @@
-<h1><meta charset="UTF-8"></h1>
+<head>
+<meta charset="UTF-8"></h1>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-  * {
-    border: 1px red dashed;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+
+  <style>
+    /*
+    * {
+      border: 1px red dashed;
+    }
+    */
+
+    html {
+    min-height: 100%;
   }
 
-  html {
-  min-height: 100%;
-}
+    body {
+      min-height: 100%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background: linear-gradient(0deg, #ffed9e, #ffefaa, #fff1b5, #fff3c0, #fff5ca, #fff7d5, #fff9df, #fffbe9); /* made at https://learnui.design/tools/gradient-generator.html */
+      font-family: "Georgia";
+  }
 
-  body {
-    min-height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background: linear-gradient(0deg, #ffed9e, #ffefaa, #fff1b5, #fff3c0, #fff5ca, #fff7d5, #fff9df, #fffbe9); /* made at https://learnui.design/tools/gradient-generator.html */
-}
+  a {
+      text-decoration: none;
+      }
 
-  .avatar-image {
-    width: 128px;
-    height: 128px;
-    object-fit: cover;
-    border-radius: 128px;
-}
-
-  .thumbnail {
-      width: 48px;
-      height: 48px;
-      border-radius: 48px;
+    .avatar-image {
+      width: 128px;
+      height: 128px;
       object-fit: cover;
-}
+      border-radius: 128px;
+  }
 
-  .main-container {
-  max-width: 640px;
-  margin: auto;
-}
+    .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+  }
 
-
-.image-row {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.name-row {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.social-icons-row {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.item {
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255)
-}
+    .main-container {
+    max-width: 640px;
+    margin: auto;
+  }
 
 
-.link-text {
-  text-align: center;
-  flex-grow: 1;
-}
+  .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-</style>
+  .name-row {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Arsenal SC";
+  }
+
+  .social-icons-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1000px;
+    padding: 5px;
+    padding-right: 53px;
+  }
+
+
+  .link-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  </style>
+</head>
 
 <body>
   <div class="main-container">
@@ -81,7 +103,7 @@
 
     <div class="social-icons-row">
       <a href="https://github.com/raghubetina" target="_blank">
-        GitHub
+        <i class="fa-brands fa-github"></i> GitHub
       </a>
 
       <a href="https://www.linkedin.com/in/raghubetina/" target="_blank">
@@ -107,10 +129,10 @@
       </div>
 
       <div class="item">
-        <img src="/thumbnails/typography.jpg">
+        <img src="/thumbnails/hillshire-farm-YGcleYb9wEQ-unsplash.jpg" class="thumbnail">
 
-        <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
-          Typography in ten minutes
+        <a class="link-text" target="_blank" href="https://www.quora.com/What-is-so-special-about-moms-cooking">
+          Why We Should Learn Cooking from Guting Mama
         </a>
       </div>
 
