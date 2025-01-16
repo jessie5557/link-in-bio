@@ -1,27 +1,71 @@
 <h1><meta charset="UTF-8"></h1>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
   * {
     border: 1px red dashed;
   }
 
+  html {
+  min-height: 100%;
+}
+
   body {
+    min-height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+    background: linear-gradient(0deg, #ffed9e, #ffefaa, #fff1b5, #fff3c0, #fff5ca, #fff7d5, #fff9df, #fffbe9); /* made at https://learnui.design/tools/gradient-generator.html */
+}
 
   .avatar-image {
     width: 128px;
     height: 128px;
     object-fit: cover;
     border-radius: 128px;
-  }
+}
 
   .thumbnail {
       width: 48px;
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
-  }
+}
+
+  .main-container {
+  max-width: 640px;
+  margin: auto;
+}
+
+
+.image-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.name-row {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255)
+}
+
+
+.link-text {
+  text-align: center;
+  flex-grow: 1;
+}
 
 </style>
 
@@ -57,7 +101,7 @@
       <div class="item">
         <img src="/thumbnails/resize.webp" class="thumbnail">
 
-        <a target="_blank" href="https://icook.tw/users/gutingmama">
+        <a class="link-text" target="_blank" href="https://icook.tw/users/gutingmama">
           Receipe Collection
         </a>
       </div>
